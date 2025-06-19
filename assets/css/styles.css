@@ -103,7 +103,7 @@ main.main-wrapper {
 .students {
   display: flex;
   align-items: center;
-  margin-bottom: 4rem; 
+  margin-bottom: 4rem;
 }
 
 .students img {
