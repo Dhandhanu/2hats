@@ -250,3 +250,86 @@ main.main-wrapper {
   font-size: 16px;
   color: white;
 }
+
+@media screen and (max-width: 1024px) {
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .right-full-bg {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content h1 {
+    font-size: 2.2rem;
+  }
+
+  .students {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .right-full-bg {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-item::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content h1 {
+    font-size: 1.6rem;
+  }
+
+  .logo-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .right-full-bg {
+    gap: 0.75rem;
+    padding: 0.5rem;
+  }
+
+  .cta-buttons button,
+  .cta-buttons a {
+    font-size: 0.9rem;
+  }
+
+  .play-circle {
+    width: 28px;
+    height: 28px;
+  }
+
+  .play-circle .material-icons {
+    font-size: 18px;
+  }
+}
